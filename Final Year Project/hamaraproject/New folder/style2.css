@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, Arial, sans-serif;
+}
+
+body {
+    background: #f7f8fc;
+    color: #111;
+}
+
+
+/* TOP BAR */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    height: 40px;
+}
+
+.logout {
+    text-decoration: none;
+    padding: 8px 16px;
+    background: #111;
+    color: #fff;
+    border-radius: 6px;
+}
+
+
+/* MAIN LAYOUT */
+
+.container {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+
+/* LEFT PANEL */
+
+.controls {
+    width: 30%;
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.controls h2 {
+    margin-bottom: 25px;
+}
+
+.controls label {
+    font-size: 14px;
+    margin-top: 15px;
+    display: block;
+}
+
+.controls input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.controls button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 14px;
+    background: #635bff;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* TEMPLATE SELECTOR */
+
+.template-list {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.temp {
+    width: 55px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.temp.active {
+    border-color: #635bff;
+}
+
+
+/* Template styles */
+
+.temp.t1 {
+    background: #fff;
+}
+
+.temp.t2 {
+    background: #fef6e4;
+}
+
+.temp.t3 {
+    background: #eef9ff;
+}
+
+.temp.t4 {
+    background: #f3fdf5;
+}
+
+
+/* PREVIEW */
+
+.preview-wrap {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* CERTIFICATE */
+
+.certificate {
+    width: 720px;
+    background: #fff;
+    padding: 60px;
+    border-radius: 18px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .12);
+}
+
+
+/* CERTIFICATE THEMES */
+
+.certificate.t1 {
+    border: 6px double #222;
+}
+
+.certificate.t2 {
+    border: 6px double #f4a261;
+}
+
+.certificate.t3 {
+    border: 6px double #219ebc;
+}
+
+.certificate.t4 {
+    border: 6px double #2a9d8f;
+}
+
+.certificate h1 {
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.line {
+    margin-bottom: 25px;
+}
+
+.sub {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+
+/* FOOTER */
+
+.bottom {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.sign {
+    margin-left: 70px;
+}
+
+
+/* QR */
+
+.qr {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: 90px;
+}

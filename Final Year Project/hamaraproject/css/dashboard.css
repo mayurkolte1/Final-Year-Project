@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif,'Poppins';
+    position:static;
+    
+}
+
+body{
+    position:static;
+    /*background:#f7f8fc;*/
+    background:linear-gradient(135deg, skyblue, #764ba2);
+    color:#111;
+}
+ header {
+      position:static;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: #ffffff;
+      color: #333;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center ;
+      gap: 10px;
+    }
+
+    header h1 {
+     
+      font-size: 26px;
+      font-weight: 700;
+      margin-left: -150px;
+      color: #764ba2;
+    }
+
+    nav a {
+      margin-left: 50px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: opacity 0.5s;
+    }
+
+    nav a:hover {
+      opacity: 0.10;
+    }
+
+    .nav a{
+    position: relative;
+    margin:0 25px;
+    font-size: 15px;
+    text-decoration:none;
+    color:#764ba2;
+}
+/* TOP BAR */
+/*.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:14px 40px;
+    background:#fff;
+    border-bottom:1px solid #eee;
+}*/
+
+/*.logo{height:40px;}*/
+ .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 45px;
+      height: 45px;
+      object-fit: cover;
+      border-radius: 50%;
+      background: white;
+      padding: 5px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-left: -45px;
+    }
+
+.btn{
+    
+    padding:8px 16px;
+    background: linear-gradient(135deg, skyblue, #764ba2);
+    color:#fff;
+    border-radius:20px;
+    text-decoration:none;
+    
+}
+
+/* HERO */
+.hero {
+    display:flex;
+    align-items:center;
+    padding:60px 40px;
+    gap: 250px;
+}
+
+.hero-left{width:50%;}
+.hero-right img{
+    margin-right: -300px;
+    width: 350px;
+    background:#fff;
+    padding:15px;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    cursor:pointer;
+    text-align:center;
+}
+
+.cta-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 22px;
+    background:linear-gradient(135deg,  blue,white);
+    color:#fff;
+    border-radius:20px;
+    text-decoration:none;
+}
+
+/* TEMPLATES */
+.templates{padding:40px;}
+.template-grid{display:flex;gap:20px;}
+
+.template-card{
+    background:#fff;
+    padding:15px;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    cursor:pointer;
+    text-align:center;
+}
+
+.template-card img{width:180px;}
+
+/* EDITOR */
+.editor{
+    display:none;
+    padding:40px;
+    gap:40px;
+}
+
+.controls{
+    width:30%;
+    background:#fff;
+    padding:30px;
+    border-radius:14px;
+}
+
+.controls input,
+.controls button{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+}
+
+.controls button{
+    background:#635bff;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+}
+
+/* CERTIFICATE */
+.preview-wrap{
+    width:70%;
+    display:flex;
+    justify-content:center;
+    
+}
+
+.certificate{
+    width:720px;
+    height:500px;
+    position:relative;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 30px 80px rgba(0,0,0,.12);
+    overflow:hidden;
+}
+
+.cert-bg{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.cert-content{
+    position:relative;
+    z-index:1;
+    padding:60px;
+}
+
+.line{
+    width:120px;
+    height:3px;
+    background:#111;
+    margin:20px auto;
+}
+
+.sub{margin-top:15px;font-size:18px;}
+
+.bottom{
+    display:flex;
+    justify-content:space-between;
+    margin-top:60px;
+}
+
+.qr{
+    position:absolute;
+    right:30px;
+    bottom:30px;
+    width:90px;
+}
+
+.full-width {
+    width: 100%;
+    grid-column: span 2; /* full row */
+    margin-top: 20px;
+}
+
+.download-card {
+    background: #8e44ad; /* Purple full color */
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.download-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.download-card p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+.view-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.view-btn:hover {
+    background: #ddd;
+}
+
+

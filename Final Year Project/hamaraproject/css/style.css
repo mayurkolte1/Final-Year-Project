@@ -1,0 +1,149 @@
+/* ========== RESET ========== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/* ========== BODY ========== */
+body{
+    overflow: hidden;
+    background: #000;
+}
+
+/* ========== BACKGROUND SLIDER ========== */
+.bg-slider{
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+/* SLIDER TRACK */
+.bg-track{
+    display: flex;
+    width: 400%;                 /* 4 images */
+    height: 100%;
+    animation: stepSlide 20s infinite;
+}
+
+/* EACH IMAGE */
+.bg{
+    flex: 0 0 100%;
+    height: 100%;
+    background-size: cover;      /* no gap */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* BACKGROUND IMAGES */
+.bg1{ background-image: url("Images/logo1.jpg"); }
+.bg2{ background-image: url("Images/logo2.jpg"); }
+.bg3{ background-image: url("Images/logo3.jpg"); }
+.bg4{ background-image: url("Images/logo4.jpg"); }
+
+/* STEP-BY-STEP SLIDE (NO MIXING) */
+@keyframes stepSlide{
+    0%   { transform: translateX(0%); }
+    20%  { transform: translateX(0%); }
+
+    25%  { transform: translateX(-100%); }
+    45%  { transform: translateX(-100%); }
+
+    50%  { transform: translateX(-200%); }
+    70%  { transform: translateX(-200%); }
+
+    75%  { transform: translateX(-300%); }
+    95%  { transform: translateX(-300%); }
+
+    100% { transform: translateX(0%); }
+}
+
+/* ========== DARK OVERLAY ========== */
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
+}
+
+/* ========== CENTER LOGIN ========== */
+.center{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+/* ========== LOGIN BOX ========== */
+.box{
+    width: 330px;
+    padding: 30px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.92);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+/* TEXT */
+.box h3{
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.box h2{
+    margin-bottom: 20px;
+}
+
+/* INPUTS */
+.box input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* BUTTON */
+.box button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #0d6efd;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.box button:hover{
+    background: #0b5ed7;
+}
+
+/* LINKS */
+.forgot{
+    text-align: right;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.register{
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register a{
+    color: deeppink;
+    font-weight: bold;
+    text-decoration: none;
+}
